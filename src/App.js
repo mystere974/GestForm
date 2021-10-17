@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  function test(n)
+{
+  let array = []
+  for (let i=1; i <= n; i++){
+    if (i % 15 === 0) {
+        array.push('Gestform')
+    }else if (i % 5 === 0) {
+        array.push('Forme')
+    }else if (i % 3 === 0) {
+        array.push('Geste')
+    }else {
+        array.push(i)
+    }
+}
+  return(array)
+}
+ return test(1000)
+
 }
 
 export default App;
